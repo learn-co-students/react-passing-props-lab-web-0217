@@ -43,9 +43,10 @@ describe('<Filter />', () => {
     expect(wrapper.find('select').childAt(0).prop('value')).toBe('all');
   });
 
+  ///////There are only three filters///////
   it('should render all the provided "filters"', () => {
     const options = wrapper.find('option');
-    expect(options.length).toBe(4, 'Did not render all the filters.');
+    expect(options.length).toBe(3, 'Did not render all the filters.');
   });
 
 });
